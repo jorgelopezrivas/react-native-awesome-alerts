@@ -156,7 +156,7 @@ export default class Alert extends Component {
         <TouchableWithoutFeedback onPress={this._onTapOutside}>
           <View style={[styles.overlay, overlayStyle]} />
         </TouchableWithoutFeedback>
-        <Animated.View
+        <View
           style={[styles.contentContainer, animation, contentContainerStyle]}
         >
           <View style={styles.content}>
@@ -175,7 +175,7 @@ export default class Alert extends Component {
             {showCancelButton ? this._renderButton(cancelButtonData) : null}
             {showConfirmButton ? this._renderButton(confirmButtonData) : null}
           </View>
-        </Animated.View>
+        </View>
       </View>
     );
   };
